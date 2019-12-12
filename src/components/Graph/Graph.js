@@ -26,7 +26,6 @@ class Graph extends Component {
     let widthColumn = this.props.data.length;
     return this.props.data.map((el, i) => (
       <Column
-        left={i * 10}
         key={i}
         height={(el * 100) / this.props.max}
         color={this.getColor()}
@@ -36,6 +35,7 @@ class Graph extends Component {
   }
 
   render() {
+    const { data } = this.props;
     return (
       <>
         <div className="graph-wrapper">
@@ -45,7 +45,7 @@ class Graph extends Component {
               {this.renderLines()}
               <div className="columns-position">{this.renderColumn()}</div>
             </div>
-            <BarTextContent columnCounter={this.props.data.length} />
+            <BarTextContent columnCounter={data.length} />
           </div>
         </div>
       </>

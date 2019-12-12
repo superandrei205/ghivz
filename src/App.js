@@ -28,12 +28,12 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
+    const { data } = this.state;
     return (
       <div className="App">
         <div className="Wrapper">
           <h2>Vertical diagram</h2>
-          <Graph max={this.max} data={this.state.data} />
+          <Graph max={this.max} data={data} />
         </div>
       </div>
     );
