@@ -1,0 +1,13 @@
+.column {
+  z-index: 10;
+  text-align: center;
+}
+
+.column span {
+  opacity: 0;
+}
+
+.column:hover span {
+  transition: 1.5s;
+  opacity: 1;
+}

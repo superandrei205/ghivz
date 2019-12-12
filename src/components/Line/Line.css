@@ -1,0 +1,7 @@
+.line {
+  position: absolute;
+  top: 10%;
+  height: 2px;
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+}

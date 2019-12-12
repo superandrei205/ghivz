@@ -1,0 +1,10 @@
+.bar-text-content {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  padding-top: 10px;
+}
+
+.text {
+  text-align: center;
+}
